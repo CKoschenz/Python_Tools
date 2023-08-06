@@ -33,4 +33,18 @@ To export the environment as a YAML (`.yml`) file we can use the command:
 
 `conda env export --prefix <path_to_project>/<my_env>/ > my_env.yml`
 
+or
+
+`conda env export | cut -f 1 -d '=' | grep -v "prefix"`
+
 The export command stores the new `.yml` file as `my_env.yml` in the current directory.
+
+## SciKit Learn
+
+Installed package of scikit-learn can be accelerated using scikit-learn-intelex.
+More details are available here: https://intel.github.io/scikit-learn-intelex
+
+```
+$ conda install scikit-learn-intelex
+$ python -m sklearnex my_application.py
+```
