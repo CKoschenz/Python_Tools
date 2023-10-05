@@ -169,6 +169,7 @@ dependencies:
   - scikit-learn
   - scikit-learn-intelex
   - scipy
+  - seaborn
   - send2trash
   - setuptools
   - sip
